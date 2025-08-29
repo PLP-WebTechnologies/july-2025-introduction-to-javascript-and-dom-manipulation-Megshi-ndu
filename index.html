@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Age Checker</title>
+</head>
+
+<body>
+    <section id="ageSection">
+        <h1>Age Checker</h1>
+        <form id="ageForm">
+            <label for="ageInput">Enter your age:</label>
+            <input id="ageInput" type="number" required>
+            <button id="checkAge" type="button">Check Age</button>
+        </form>
+        <div id="result"></div>
+    </section>
+
+    <script src="Assign script.js"></script>
+</body>
+
+</html>
+</head>
+
+<body>
+    <h1>Utility Functions Demo</h1>
+
+    <div class="container">
+        <!-- Calculator Card -->
+        <div class="card">
+            <h2>Calculator Functions</h2>
+
+            <div class="input-group">
+                <label for="prices">Enter prices (comma separated):</label>
+                <input type="text" id="prices" value="10, 20, 30">
+            </div>
+
+            <div class="input-group">
+                <label for="tax">Tax rate (%):</label>
+                <input type="number" id="tax" value="8">
+            </div>
+
+            <button onclick="calculateTotal()">Calculate Total</button>
+
+            <div class="result" id="totalResult"></div>
+        </div>
+
+        <!-- Formatter Card -->
+        <div class="card">
+            <h2>Formatter Functions</h2>
+
+            <div class="input-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" value="john">
+            </div>
+
+            <div class="input-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" value="doe">
+            </div>
+
+            <button onclick="formatName()">Format Name</button>
+
+            <div class="result" id="nameResult"></div>
+        </div>
+
+        <!-- Toggle Card -->
+        <div class="card">
+            <h2>Toggle Function</h2>
+
+            <button onclick="toggleContent()" id="toggleButton">Show Content</button>
+
+            <div class="result hidden" id="toggleContent">
+                This content was toggled! You can show/hide this using the toggle function.
+            </div>
+        </div>
+
+        <!-- Tab Component -->
+        <div class="card">
+            <h2>Tab Component</h2>
+
+            <div class="tabs">
+                <div class="tab active" onclick="switchTab(0)">Tab 1</div>
+                <div class="tab" onclick="switchTab(1)">Tab 2</div>
+                <div class="tab" onclick="switchTab(2)">Tab 3</div>
+            </div>
+
+            <div class="tab-content active">
+                <p>This is the content for Tab 1. Each tab can hold different information.</p>
+            </div>
+
+            <div class="tab-content">
+                <p>This is the content for Tab 2. The tab function helps organize content in a small space.</p>
+            </div>
+
+            <div class="tab-content">
+                <p>This is the content for Tab 3. Tabs are great for navigation and organization.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="Assign script.js"></script>
+</body>
+
+</html>
+
+<body>
+    <h1>JavaScript Loops Demonstration</h1>
+
+    <div class="container">
+        <!-- For Loop Card -->
+        <div class="card">
+            <h2>For Loop</h2>
+            <p>Iterate through an array of fruits</p>
+            <button onclick="printFruits()">Print Fruits</button>
+            <div class="result" id="forLoopResult"></div>
+        </div>
+
+        <!-- While Loop Card -->
+        <div class="card">
+            <h2>While Loop</h2>
+            <p>Countdown from 5 to 1</p>
+            <button onclick="startCountdown()">Start Countdown</button>
+            <div class="countdown" id="countdown">5</div>
+        </div>
+
+        <!-- ForEach Loop Card -->
+        <div class="card">
+            <h2>ForEach Loop</h2>
+            <p>Display list of programming languages</p>
+            <button onclick="showLanguages()">Show Languages</button>
+            <div class="result">
+                <ul id="forEachResult"></ul>
+            </div>
+        </div>
+
+        <!-- Animated Progress Bar -->
+        <div class="card">
+            <h2>Animated Progress Bar</h2>
+            <p>Simulate loading with a loop</p>
+            <button onclick="animateProgress()">Animate Progress</button>
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+            <div class="result" id="progressResult">0% Complete</div>
+        </div>
+    </div>
+
+    <script src="Assign script.js"></script>
+</body>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>JavaScript DOM Manipulation</h1>
+            <p class="description">Learn how to use JavaScript to select elements, respond to user actions, and
+                dynamically update the content of your web page.</p>
+        </header>
+
+        <div class="theme-switcher">
+            <button id="theme-toggle">Toggle Dark Mode</button>
+        </div>
+
+        <div class="card-container">
+            <div class="card">
+                <h2>Element Selection</h2>
+                <p>Select elements by ID, class, or tag name and modify their content.</p>
+                <div class="input-group">
+                    <label for="text-input">Enter some text:</label>
+                    <input type="text" id="text-input" placeholder="Type something here">
+                </div>
+                <button id="update-text">Update Text</button>
+                <div class="result" id="text-result">Original text will be changed</div>
+            </div>
+
+            <div class="card">
+                <h2>Event Listeners</h2>
+                <p>Respond to button clicks, mouse movements, and form submissions.</p>
+                <button id="click-me">Click Me!</button>
+                <div class="result" id="click-result">Button not clicked yet</div>
+                <div class="input-group">
+                    <label for="color-select">Choose a color:</label>
+                    <select id="color-select">
+                        <option value="#e74c3c">Red</option>
+                        <option value="#2ecc71">Green</option>
+                        <option value="#3498db">Blue</option>
+                        <option value="#f1c40f">Yellow</option>
+                    </select>
+                </div>
+                <button id="change-color">Change Color</button>
+            </div>
+
+            <div class="card">
+                <h2>Dynamic Content</h2>
+                <p>Create, modify, and remove elements from the page.</p>
+                <div class="input-group">
+                    <label for="user-name">Enter a name:</label>
+                    <input type="text" id="user-name" placeholder="Name">
+                </div>
+                <button id="add-user">Add User</button>
+                <div class="result" id="user-list"></div>
+            </div>
+
+            <div class="card">
+                <h2>Class Toggling</h2>
+                <p>Toggle CSS classes to show/hide content or change styles.</p>
+                <button id="toggle-content">Toggle Hidden Content</button>
+                <div class="result hidden" id="hidden-content">
+                    This content was hidden! Now you can see it.
+                </div>
+                <div class="input-group">
+                    <label for="border-toggle">Toggle Border:</label>
+                    <button id="border-toggle">Toggle Border</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Tab Component</h2>
+                <p>Switch between different content sections using tabs.</p>
+                <div class="tab-container">
+                    <div class="tabs">
+                        <div class="tab active" data-tab="tab1">Tab 1</div>
+                        <div class="tab" data-tab="tab2">Tab 2</div>
+                        <div class="tab" data-tab="tab3">Tab 3</div>
+                    </div>
+                    <div class="tab-content active" id="tab1">
+                        <h3>Content for Tab 1</h3>
+                        <p>This is the first tab content. Tabs are useful for organizing content in a limited space.</p>
+                    </div>
+                    <div class="tab-content" id="tab2">
+                        <h3>Content for Tab 2</h3>
+                        <p>This is the second tab content. You can put any HTML content inside tabs.</p>
+                    </div>
+                    <div class="tab-content" id="tab3">
+                        <h3>Content for Tab 3</h3>
+                        <p>This is the third tab content. JavaScript makes it easy to switch between tabs.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Form Handling</h2>
+                <p>Capture form data and display it on the page.</p>
+                <div class="input-group">
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" placeholder="Your name">
+                </div>
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Your email">
+                </div>
+                <div class="input-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" placeholder="Your message"></textarea>
+                </div>
+                <button id="submit-form">Submit</button>
+                <div class="result" id="form-result"></div>
+            </div>
+        </div>
+    </div>
+    <script src="Assign script.js"></script>
+</body>
+
+</html>
